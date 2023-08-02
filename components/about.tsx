@@ -7,6 +7,7 @@ import SectionHeading from "@/components/section-heading";
 const About = () => {
   return (
     <motion.section
+      id="about"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
