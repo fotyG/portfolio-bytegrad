@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 import { skillsData } from "@/lib/data";
-import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
+import SectionHeading from "@/components/section-heading";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -38,7 +38,7 @@ const Skills = () => {
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInAnimationVariants}
-            className="bg-white border border-black/10 rounded-xl px-5 py-3"
+            className="bg-white borderBlack rounded-xl px-5 py-3"
           >
             {skill}
           </motion.li>
